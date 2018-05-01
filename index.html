@@ -3,43 +3,16 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-	<div class="table">
-		<table border="1">
-			<tr>
-				<th>#</th>
-				<th>X</th>
-				<th>Y</th>
-			</tr>
-			<tr class="hide">
-				<td></td>
-				<td><input type="number"></td>
-				<td><input type="number"></td>
-			</tr>
-			<tr class="row">
-				<td>1</td>
-				<td><input class="x" type="number"></td>
-				<td><input class="y" type="number"></td>
-			</tr>
-		</table>
-	</div>
-
-	<br><br>
-
-		<button class="addRow">Add Row</button>
-
-		<input class="change" type="checkbox">File
-		<br>
-		<br>
-
-		<input type="file" id="file">
-		<br>
-		<br>
-	
-		<div class="buttons">
+	<header class="header">
+		<div class="fileReader">
+			<input type="file" id="file">
+		</div>
+		<p class="btnOpen">Open</p>
+		<div class="btns">
 			<img src="img/chart1.png" alt="" class="chart chart1">
 			<img src="img/chart2.png" alt="" class="chart chart2">
 			<img src="img/chart3.png" alt="" class="chart chart3">
@@ -47,24 +20,58 @@
 			<img src="img/chart5.png" alt="" class="chart chart5">
 			<img src="img/chart6.png" alt="" class="chart chart6">
 			<img src="img/chart7.png" alt="" class="chart chart7">
-
-			<img src="img/chart1.png" alt="" class="fchart fchart1">
-			<img src="img/chart2.png" alt="" class="fchart fchart2">
-			<img src="img/chart3.png" alt="" class="fchart fchart3">
-			<img src="img/chart4.png" alt="" class="fchart fchart4">
-			<img src="img/chart5.png" alt="" class="fchart fchart5">
-			<img src="img/chart6.png" alt="" class="fchart fchart6">
-			<img src="img/chart7.png" alt="" class="fchart fchart7">
+			<img src="img/chart8.png" alt="" class="chart chart7">
+			<img src="img/chart9.png" alt="" class="chart chart9">
 		</div>
+		<p class="openTable">Open</p>
+		<div class="tableWrapper">
+			<div class="table">
+				<table border="1">
+					<tr>
+						<th class="counter">#</th>
+						<th>X</th>
+						<th>Y</th>
+					</tr>
+					<tr class="hide">
+						<td></td>
+						<td><input type="number"></td>
+						<td><input type="number"></td>
+					</tr>
+					<tr class="row">
+						<td>1</td>
+						<td><input class="x" type="number"></td>
+						<td><input class="y" type="number"></td>
+					</tr>
+				</table>
+				
+			</div>
+			<button class="addRow">Add Row</button>
 
-
+		</div>
 		
-	
+	</header>
+		
+
 </body>
 
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<script src="https://d3js.org/d3.v3.min.js"></script>
-	<script src="JS/script.js"></script>
+	<script src="js/AddRow.js"></script>
+	<script src="js/mainAxis.js"></script>
+	<script src="js/Table.js"></script>
+	<script src="js/readFile.js"></script>
+	<script src="js/Charts/Chart1.js"></script>
+	<script src="js/Charts/Chart2.js"></script>
+	<script src="js/Charts/Chart3.js"></script>
+	<script src="js/Charts/Chart4.js"></script>
+	<script src="js/Charts/Chart5.js"></script>
+	<script src="js/Charts/Chart6.js"></script>
+	<script src="js/Charts/Chart7.js"></script>
+	<script src="js/Charts/Chart8.js"></script>
+	<script src="js/openTable.js"></script>
+	<script src="js/btnOpen.js"></script>
+	<script src="js/script.js"></script>
+	
 </html>
